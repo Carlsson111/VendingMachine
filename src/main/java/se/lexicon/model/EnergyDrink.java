@@ -4,9 +4,7 @@ public class EnergyDrink extends Product {
     private int caffeineContent;
 
     public EnergyDrink(int id, double price, String productName, int caffeineContent) {
-        setId(id);
-        setPrice(price);
-        setProductName(productName);
+        super(id,price,productName);
         this.caffeineContent = caffeineContent;
     }
 

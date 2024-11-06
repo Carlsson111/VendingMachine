@@ -4,9 +4,7 @@ public class Coffee extends Product {
     private String roastLevel;
 
     public Coffee(int id, double price, String productName, String roastLevel) {
-        setId(id);
-        setPrice(price);
-        setProductName(productName);
+        super(id,price,productName);
         this.roastLevel = roastLevel;
     }
 

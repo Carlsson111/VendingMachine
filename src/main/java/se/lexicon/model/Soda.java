@@ -3,9 +3,7 @@ package se.lexicon.model;
 public class Soda extends Product {
     private int sugarContent;
     public Soda(int id, double price, String productName, int sugarContent) {
-        setId(id);
-        setPrice(price);
-        setProductName(productName);
+        super(id,price,productName);
         this.sugarContent = sugarContent;
     }
 

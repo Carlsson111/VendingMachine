@@ -5,6 +5,12 @@ public abstract class Product {
     private double  price;
     private String productName;
 
+    public Product(int id, double price, String productName) {
+        this.id = id;
+        this.price = price;
+        this.productName = productName;
+    }
+
 
     public int getId() {
         return id;

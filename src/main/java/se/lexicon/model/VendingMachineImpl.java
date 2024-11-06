@@ -4,11 +4,16 @@ public class VendingMachineImpl implements VendingMachine {
     private double currentBalance;
     private Product[] products;
 
-
-    public VendingMachineImpl(Product[] products) {
-        this.products = products;
-        this.currentBalance = 0;
+    public VendingMachineImpl(){
+        products = new Product[6];
+        products[0] = new Chips(1,25,"BBQ Heaven","BBq");
+        products[1]= new Chips(2,25,"Sea Chips","Salted");
+        products[2]=new Chips(3,15,"Normal Coffe","Java");
+        products[3]= new EnergyDrink(4,30,"Monster Green",250);
+        products[4]= new Soda(5,20,": Cola",27);
+        products[5]= new Soda(6,20,": Fanta",15);
     }
+
 
     @Override
     public void addCurrency(Currency currency) {
@@ -39,7 +44,7 @@ public class VendingMachineImpl implements VendingMachine {
     public int endSession() {
         int balanceToReturn = (int) currentBalance;
         currentBalance = 0;
-        System.out.println("Session ended. Returning balance"+balanceToReturn);
+        System.out.println("Session ended. Returning balance ;"+balanceToReturn);
         return balanceToReturn;
     }
 

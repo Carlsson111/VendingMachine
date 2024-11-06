@@ -4,9 +4,7 @@ public class Chips extends Product {
     private String flavor;
 
     public Chips(int id, double price, String productName, String flavor) {
-        setId(id);
-        setPrice(price);
-        setProductName(productName);
+        super(id,price,productName);
         this.flavor = flavor;
     }
 
