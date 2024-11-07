@@ -1,18 +1,18 @@
 package se.lexicon.model;
 
 public class EnergyDrink extends Product {
-    private int caffeineContent;
+    private String caffeineContent;
 
-    public EnergyDrink(int id, double price, String productName, int caffeineContent) {
+    public EnergyDrink(int id, double price, String productName, String caffeineContent) {
         super(id,price,productName);
         this.caffeineContent = caffeineContent;
     }
 
-    public int getCaffeineContent() {
+    public String getCaffeineContent() {
         return caffeineContent;
     }
 
-    public void setCaffeineContent(int caffeineContent) {
+    public void setCaffeineContent(String caffeineContent) {
         this.caffeineContent = caffeineContent;
     }
 

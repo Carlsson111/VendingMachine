@@ -1,17 +1,17 @@
 package se.lexicon.model;
 
 public class Soda extends Product {
-    private int sugarContent;
-    public Soda(int id, double price, String productName, int sugarContent) {
+    private String sugarContent;
+    public Soda(int id, double price, String productName, String sugarContent) {
         super(id,price,productName);
         this.sugarContent = sugarContent;
     }
 
-    public int getSugarContent() {
+    public String getSugarContent() {
         return sugarContent;
     }
 
-    public void setSugarContent(int sugarContent) {
+    public void setSugarContent(String sugarContent) {
         this.sugarContent = sugarContent;
     }
 

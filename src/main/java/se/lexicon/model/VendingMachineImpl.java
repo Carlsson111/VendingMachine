@@ -6,12 +6,12 @@ public class VendingMachineImpl implements VendingMachine {
 
     public VendingMachineImpl(){
         products = new Product[6];
-        products[0] = new Chips(1,25,"BBQ Heaven","BBq");
-        products[1]= new Chips(2,25,"Sea Chips","Salted");
-        products[2]=new Chips(3,15,"Normal Coffe","Java");
-        products[3]= new EnergyDrink(4,30,"Monster Green",250);
-        products[4]= new Soda(5,20,": Cola",27);
-        products[5]= new Soda(6,20,": Fanta",15);
+        products[0] = new Chips(1,25,":BBQ Heaven","BBq");
+        products[1]= new Chips(2,25,":Sea Chips","Salted");
+        products[2]=new Chips(3,15,":Normal Coffe","Java");
+        products[3]= new EnergyDrink(4,30,":Monster Green","250mg");
+        products[4]= new Soda(5,20,":Cola","27G");
+        products[5]= new Soda(6,20,":Fanta","27g");
     }
 
 
